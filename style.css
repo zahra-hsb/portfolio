@@ -25,7 +25,10 @@ h3{
     color: var(--gray);
 }
 h1{
-    font-size: 26pt;
+    font-size: 64px;
+}
+h3{
+    font-size: 40px;
 }
 button, p{
     font-family: monospace;
@@ -121,9 +124,12 @@ section.btns-section > div > span{
     align-items: flex-start;
     justify-content: space-evenly;
 }
+.project-section .title p{
+    font-size: 24px;
+}
 .projects-list .project{
-    width: 50%;
-    height: 35vh;
+    width: 100%;
+    height: auto;
     padding: 10px;
     display: flex;
 }
@@ -131,10 +137,11 @@ section.btns-section > div > span{
 .project .project-details{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 div.project-details p{
     text-align: justify;
+    font-size: 16px;
 }
 section > .project:nth-child(2){
     display: flex;
