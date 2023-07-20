@@ -1,0 +1,142 @@
+/* all tags */
+*{
+    box-sizing: border-box;
+    margin: 0; padding: 0;
+}
+
+/* root styles */
+:root{
+    --primary-color: #188AEC;
+    --white: #fff;
+    --gray: #4B5563;
+}
+
+/* primary tags */
+
+header{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 5vh 10vh;
+}
+h1,
+h3{
+    font-family: system-ui;
+    color: var(--gray);
+}
+h1{
+    font-size: 26pt;
+}
+button, p{
+    font-family: monospace;
+}
+p{
+    color: var(--gray);
+}
+button{
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+/* main section */
+.main-section{
+    padding: 5vh 12vw;
+}
+
+/* home section */
+.home-section{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    justify-content: space-evenly;
+    display: none
+}
+
+.btn{
+    width: 150px;
+    height: 40px;
+    position: relative;
+    background: var(--primary-color);
+    color: var(--white);
+    border-radius: 8px;
+   
+}
+
+.btn::before{
+    content: '';
+    position: absolute;
+    top: -5;
+    left: 5;
+    width: 150px;
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid var(--primary-color);
+}
+
+/* buttons section */
+.btns-section{
+    width: 100%;
+    padding: 12px 50px;
+    margin-top: 20px;
+    border-radius: 24px;
+    box-shadow: -24px 24px 64px 0px #11111129;
+}
+main > section.btns-section > div > button{
+    border-radius: 15px;
+}
+.btns-section .btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* circle */
+.circle,
+.circle1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+    position: absolute;
+    filter: blur(80px);
+}
+.circle{
+    top: 50%;
+    left: 5%;
+}
+.circle1{
+    top: 20%;
+    right: 10%;
+    filter: blur(95px);
+}
+section.btns-section > div > span{
+    border: 1px solid var(--gray);
+    height: 50px;
+}
+
+/* project secrion */
+.project-section .title{
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.projects-list .project{
+    width: 50%;
+    height: 35vh;
+    padding: 10px;
+    display: flex;
+}
+
+.project .project-details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+div.project-details p{
+    text-align: justify;
+}
+section > .project:nth-child(2){
+    display: flex;
+    flex-direction: row-reverse;
+}
